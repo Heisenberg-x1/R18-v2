@@ -1,27 +1,15 @@
 import "./App.css";
-import FunctionalComp, { Btn } from "./components/FunctionalComp";
-import { ClassComp, ClassComp1 } from "./components/ClassComp";
 import React from "react";
-import State from "./components/State";
-
+import Props from "./components/Parts";
+import { Main } from "./components/Parts";
+import './App.css';
+import { Side } from "./components/Parts";
 const Greeting = () => {
   return (
-    <div>
-      <h2>Hello React World</h2>
-      <p>I am learning React and I love it!</p>
-      <br />
-      <FunctionalComp name="one">
-        <button type="button">Click</button>
-      </FunctionalComp>
-      <FunctionalComp name="two" />
-      <FunctionalComp name="three" />
-      <br />
-      <ClassComp />
-      <ClassComp1 />
-      <br />
-      <Btn className="btn">Click</Btn>
-      <br />
-      <State />
+<div className="App">
+      <Props first="Home" second="Contact" third="About" fourth="Products" />
+      <Main/>
+      <Side/>
     </div>
   );
 };

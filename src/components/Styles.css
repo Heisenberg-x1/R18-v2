@@ -39,3 +39,8 @@
 .side li{
     list-style: none;
 }
+
+/* Today */
+.button-count{
+   color: teal;
+}

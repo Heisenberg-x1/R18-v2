@@ -1,6 +1,8 @@
 import React from "react";
 import "./Styles.css";
 import { useState } from "react";
+import Today from "./Today";
+import Hooks from "./Hooks";
 
 const Props = (props) => {
   return (
@@ -20,6 +22,7 @@ export const Main = () => {
   const change = () => {
     setMessage("Thank You");
   };
+  const date = new Date();
   return (
     <div className="main">
       <h2>Welcome to Our Site! Who We Are</h2>
@@ -36,6 +39,10 @@ export const Main = () => {
       <button type="button" onClick={change}>
         Click
       </button>
+      <br />
+      <Today date = {date} />
+      <br />
+      <Hooks />
     </div>
   );
 };

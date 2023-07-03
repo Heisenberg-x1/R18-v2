@@ -7,3 +7,7 @@ const[fruit1, ...rest] = fruits;
 console.log(fruit1);
 console.log(rest);
 console.log('5' + 1);
+
+const num = [1, 2, 3, 4, 5];
+num.push(6,7);
+console.log(num.length);
